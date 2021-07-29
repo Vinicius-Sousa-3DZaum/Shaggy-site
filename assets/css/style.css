@@ -1,6 +1,6 @@
 :root {
     --cor-de-ciminha: #000;
-    --cor-back: #14213D;
+    --cor-back: rgb(0, 41, 118);
     --cor-bordinha: #FCAC11;
     --cor-texto: #E5E5E5;
     --cor-baixo: rgb(17, 17, 17);
@@ -121,10 +121,7 @@ body #trechos {
 
 #sus {
     color: #bf7f00;
-}
-
-#p1 {
-    max-width: 900px;
+    text-align: center;
 }
 
 .container2 strong {
@@ -160,4 +157,82 @@ body div ul li h3 {
 ::-webkit-scrollbar-thumb {
     background: #666666;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 780px) {
+
+    html {
+        background-color: rgb(0, 41, 118);
+    }
+
+    .container {
+        background-color: rgb(0, 0, 0);
+    }
+
+    main #cabeçalho {
+        margin-top: 70px;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 0px;
+    }
+
+    #esquerdinha {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    main #cabeçalho h1 {
+        margin-right: auto;
+        margin-left: auto;
+        color: var(--cor-texto);
+        font-size: 3rem;
+        text-align: center;
+        max-width: 80%;
+        border: 10px double var(--cor-de-ciminha);
+        border-radius: 24px;
+    }
+
+    main #trechos h2 {
+        margin-top: 0rem;
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        padding: 2px;
+        display: block;
+        text-align: center;
+    }
+
+    header a img {
+        max-width: 380px; 
+        max-height: 380px;
+    }
+
+    .menu, .menu li a {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 3.5rem;
+        gap: 50px;
+    }
+
+    #sus {
+        margin: 0px;
+    }
+
+}
+
+@media screen and (max-width: 445px) {
+
+    .menu, .menu li a {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 2.5rem;
+        gap: 25px;
+    }
+
 }
